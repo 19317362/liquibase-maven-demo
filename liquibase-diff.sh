@@ -4,6 +4,10 @@
 # mvn compile package
 # mvn liquibase:update-sql
 # mvn liquibase:update
+# liquibase:generateChangeLog
+#
+#  Generates a changelog based on the current database schema. Typically used
+#  when beginning to use Liquibase on an existing project and database schema.
 if [ -z "$1" ]
   then
     echo "Parameter missing"
